@@ -1,5 +1,16 @@
+// Component imports
+@import "./components/navbar";
+
+// Page imports
+@import './pages/';
+
+// Global CSS
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
