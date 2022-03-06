@@ -15,3 +15,15 @@
     @content;
   }
 }
+
+@mixin min($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin max($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}

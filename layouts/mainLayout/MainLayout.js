@@ -10,7 +10,7 @@ const MainLayout = ({
   ...props
 }) => {
   return (
-    <div style={{ position: "relative" }}>
+    <div>
       <Head>
         <title>Brud Rewards {title ? `| ${title}` : ""}</title>
         <meta name="description" content={description} />
