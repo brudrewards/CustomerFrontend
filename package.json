@@ -8,6 +8,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.8.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/roboto": "^4.5.3",
+    "@mui/icons-material": "^5.4.4",
+    "@mui/material": "^5.4.4",
+    "animejs": "^3.2.1",
     "axios": "^0.25.0",
     "next": "12.0.10",
     "react": "17.0.2",

@@ -5,6 +5,40 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+  display: none;
+}
+@media (min-width: 1000px) {
+  nav {
+    display: block;
+  }
+}
+
+.MobileMenu {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+@media (min-width: 1000px) {
+  .MobileMenu {
+    display: none;
+  }
+}
+.MobileMenu .MenuHeader {
+  background-color: #F55800;
+  padding: 12px 24px;
+}
+.MobileMenu .MenuItems {
+  background-color: #F55800;
+  height: calc(100vh - 93px);
+  overflow: hidden;
+  width: 0%;
+}
+.MobileMenu .MenuItems .MenuItem {
+  margin: 15px 0px;
+  padding: 0px 24px;
+}
+.MobileMenu .MenuItems .MenuItem .Icon {
+  margin-right: 12px;
 }
 
 * {

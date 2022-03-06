@@ -1,8 +1,12 @@
+@import "./variables";
+@import "./mixens";
+
 // Component imports
 @import "./components/navbar";
+@import "./components/mobileMenus";
 
 // Page imports
-@import './pages/';
+@import "./pages/";
 
 // Global CSS
 * {
