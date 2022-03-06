@@ -1,3 +1,4 @@
+import { Container } from "@mui/material";
 import Head from "next/head";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -16,7 +17,9 @@ const MainLayout = ({
         <meta name="description" content={description} />
       </Head>
       <Header />
-      <main style={{ ...style }}>{children}</main>
+      <Container component="main" style={{ ...style }} maxWidth='xl'>
+        {children}
+      </Container>
       <Footer />
     </div>
   );
