@@ -279,9 +279,7 @@ nav {
 }
 
 .MobileMenu {
-  top: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
 }
 @media (min-width: 1000px) {
   .MobileMenu {
@@ -293,6 +291,9 @@ nav {
   padding: 12px 24px;
 }
 .MobileMenu .MenuItems {
+  top: 93px;
+  z-index: 99;
+  position: absolute;
   background-color: #F55800;
   height: calc(100vh - 93px);
   overflow: hidden;

@@ -1,6 +1,5 @@
 .MobileMenu {
-  top: 0;
-  position: sticky;
+  position: relative;
   @include desktop {
     display: none;
   }
@@ -9,8 +8,11 @@
     padding: 12px 24px;
   }
   .MenuItems {
+    top: 93px;
+    z-index: 99;
+    position: absolute;
     background-color: $primary-color;
-    height: calc(100vh - (69px + 24px));
+    height: calc(100vh - 93px);
     overflow: hidden;
     width: 0%;
     .MenuItem {
