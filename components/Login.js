@@ -1,18 +1,19 @@
 import { Button, Grid, TextField, Typography as Font } from "@mui/material";
 import Link from "next/link";
 import React from "react";
-import { primaryColor } from "../../styles/themes/defaulttheme";
+import { primaryColor } from "../styles/themes/defaulttheme";
 
 const Login = ({
-  onSubmit = () => {},
+  handleSubmit = () => {},
   handleChange = () => {},
+  values = {},
   resetPassword,
 }) => {
   return (
     <Grid
       container
       component="form"
-      onSubmit={onSubmit}
+      onSubmit={handleSubmit}
       direction="column"
       spacing={2}
     >
@@ -22,6 +23,7 @@ const Login = ({
           label="Email"
           type="email"
           onChange={handleChange}
+          value={values.email}
           variant="standard"
           fullWidth
         />
@@ -33,6 +35,7 @@ const Login = ({
           type="password"
           variant="standard"
           onChange={handleChange}
+          value={values.password}
           fullWidth
         />
       </Grid>

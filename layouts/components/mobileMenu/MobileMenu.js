@@ -28,6 +28,9 @@ const MobileMenu = ({ customer }) => {
       duration: 300,
       easing: "linear",
     });
+    const body = document.querySelector("body");
+    if (!open) body.setAttribute("style", "overflow: hidden");
+    else body.removeAttribute("style");
     animateMenu.play();
     setOpen(!open);
   };

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import MainLayout from "../layouts/mainLayout/MainLayout";
 import { Grid, Typography as Font } from "@mui/material";
 import { primaryColor } from "../styles/themes/defaulttheme";
-import LoginForm from "../components/login/Login";
+import LoginForm from "../components/Login";
 const Login = () => {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -31,7 +31,10 @@ const Login = () => {
       }
     }
   };
-
+  const values = {
+    email,
+    password,
+  };
   return (
     <MainLayout title="Login">
       <Grid container direction="column" alignContent="center" spacing={3}>
@@ -48,6 +51,7 @@ const Login = () => {
           <LoginForm
             handleSubmit={handleSubmit}
             handleChange={handleChange}
+            values={values}
             resetPassword
           />
         </Grid>
