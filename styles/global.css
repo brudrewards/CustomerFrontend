@@ -289,6 +289,7 @@ nav {
 .MobileMenu .MenuHeader {
   background-color: #F55800;
   padding: 12px 24px;
+  height: 93px;
 }
 .MobileMenu .MenuItems {
   top: 93px;
@@ -304,6 +305,9 @@ nav {
   padding: 0px 24px;
 }
 .MobileMenu .MenuItems .MenuItem .Icon {
+  margin-right: 12px;
+}
+.MobileMenu .MenuItems .MenuItem .Avatar {
   margin-right: 12px;
 }
 

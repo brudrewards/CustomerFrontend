@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     /***************************************
-     * add logic hear when backend is live
+     * add logic here when backend is live
      ***************************************/
   };
 

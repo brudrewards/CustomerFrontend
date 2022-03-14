@@ -3,9 +3,9 @@ import React from "react";
 
 const MenuItems = ({ children, ...props }) => {
   return (
-    <Grid container direction="column" className="MenuItems">
+    <Grid container direction="column" className="MenuItems" {...props}>
       {children.map((i, index) => (
-        <Grid item key={index}>
+        <Grid item key={index} >
           {i}
         </Grid>
       ))}

@@ -16,23 +16,18 @@ import Info from "@mui/icons-material/InfoOutlined";
 import Power from "@mui/icons-material/PowerSettingsNewOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import anime from "animejs";
-
+import Customer from "./Customer";
+import Rewards from "../../../pages/rewards";
+import { aniMobileMenu } from "../../../utils/animations";
 const MobileMenu = ({ customer }) => {
   const [open, setOpen] = useState(false);
-  const handleOpen = () => {
-    const width = open ? ["100%", "0%"] : ["0%", "100%"];
-    const animateMenu = anime({
-      targets: ".MenuItems",
-      width: width,
-      duration: 300,
-      easing: "linear",
-    });
-    const body = document.querySelector("body");
-    if (!open) body.setAttribute("style", "overflow: hidden");
-    else body.removeAttribute("style");
-    animateMenu.play();
-    setOpen(!open);
+  const handleOpen = () => aniMobileMenu({ open: [open, setOpen] });
+
+  /************************
+   * Customer for testing
+   ************************/
+  const testCustomer = {
+    name: "Doron",
   };
   return (
     <Grid
@@ -40,6 +35,7 @@ const MobileMenu = ({ customer }) => {
       component="aside"
       direction={"column"}
       className="MobileMenu"
+      wrap="nowrap"
     >
       <MenuHeader>
         <MenuItem href="/" icon={<Image src={LogoSrc} alt="Brud Logo" />} />
@@ -49,6 +45,7 @@ const MobileMenu = ({ customer }) => {
         />
       </MenuHeader>
       <MenuItems>
+        <Customer customer={testCustomer} />
         <MenuItem href="/rewards" icon={<Star />}>
           Reward Points
         </MenuItem>

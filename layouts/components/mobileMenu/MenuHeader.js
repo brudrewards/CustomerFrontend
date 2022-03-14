@@ -9,6 +9,7 @@ const MenuHeader = ({ children, ...props }) => {
       alignItems="center"
       className="MenuHeader"
       direction="row"
+      wrap="nowrap"
     >
       {children.map((i, index) => (
         <Grid item key={index}>

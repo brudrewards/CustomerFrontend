@@ -4,7 +4,7 @@ import MainLayout from "../layouts/mainLayout/MainLayout";
 
 const Terms = () => {
   return (
-    <MainLayout>
+    <MainLayout title="Terms & Conditions">
       <Font variant="h1" align="center">
         Terms and Policy
       </Font>

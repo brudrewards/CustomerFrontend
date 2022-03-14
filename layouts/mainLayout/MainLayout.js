@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import Head from "next/head";
+import { useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -10,14 +11,21 @@ const MainLayout = ({
   description = "Earn rewards for ordering your favorite coffee from local coffee shops.",
   ...props
 }) => {
+  /***************************
+   * overflow fix for mobile
+   ***************************/
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.removeAttribute("style");
+  }, []);
   return (
     <div>
       <Head>
-        <title>Brud Rewards {title ? `| ${title}` : ""}</title>
+        <title>Brud Rewards{title ? ` | ${title}` : ""}</title>
         <meta name="description" content={description} />
       </Head>
       <Header />
-      <Container component="main" style={{ ...style }} maxWidth='xl'>
+      <Container component="main" style={{ ...style }} maxWidth="xl">
         {children}
       </Container>
       <Footer />

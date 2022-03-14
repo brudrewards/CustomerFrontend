@@ -6,6 +6,7 @@
   .MenuHeader {
     background-color: $primary-color;
     padding: 12px 24px;
+    height: 93px;
   }
   .MenuItems {
     top: 93px;
@@ -19,6 +20,9 @@
       margin: 15px 0px;
       padding: 0px 24px;
       .Icon {
+        margin-right: 12px;
+      }
+      .Avatar {
         margin-right: 12px;
       }
     }
