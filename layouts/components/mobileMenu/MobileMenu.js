@@ -2,9 +2,11 @@ import { Grid } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import MenuItem from "./MenuItem";
-import LogoSrc from "../../../public/logo-white.png";
+import LogoSrc from "../../../public/assets/logo-white.png";
 import MenuHeader from "./MenuHeader";
 import MenuItems from "./MenuItems";
+import Customer from "./Customer";
+import { aniMobileMenu } from "../../../utils/animations";
 /*********
  * icons imports
  *********/
@@ -16,9 +18,8 @@ import Info from "@mui/icons-material/InfoOutlined";
 import Power from "@mui/icons-material/PowerSettingsNewOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import Customer from "./Customer";
-import Rewards from "../../../pages/rewards";
-import { aniMobileMenu } from "../../../utils/animations";
+
+
 const MobileMenu = ({ customer }) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => aniMobileMenu({ open: [open, setOpen] });
