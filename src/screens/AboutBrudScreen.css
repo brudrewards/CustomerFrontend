@@ -1,0 +1,27 @@
+.brudScreen__top {
+  background-color: #303030;
+  padding: 31px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brudScreen__top > h4 {
+  color: #b6e2ef;
+  max-width: 650px;
+  font-size: large;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  /* font-weight: 600; */
+}
+
+.brudScreen__top > h2 {
+  color: #b6e2ef;
+  gap: 25px;
+  padding: 31px;
+  max-width: 650px;
+  /* font-size: large; */
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}

@@ -11,10 +11,10 @@ function Header() {
                 <Link className='header_logo' to='/'>
                     <img src={require("./assets/rewards_logo_inverted.jpg")} alt="Brud_Rewards_logo" />
                 </Link>
-                <Link to="/about_brud" className="header__link">
+                <Link to="/aboutbrud" className="header__link">
                     About Brud
                 </Link>
-                <Link to="/cafe_partners" className="header__link">
+                <Link to="/cafePartners" className="header__link">
                     Cafe Partners
                 </Link>
                 <Link to="/download_app" className="header__link">

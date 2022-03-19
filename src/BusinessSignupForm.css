@@ -1,0 +1,72 @@
+.businessSignupForm {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 4px 5px 0 rgba(0, 0, 0, 0.06),
+    0 2px 4px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  max-width: 500px;
+  height: 664px;
+  margin-bottom: 20px;
+}
+
+.businessSignupForm__container {
+  padding: 56px;
+}
+
+.businessSignupForm__section {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+.businessSignupForm__inputContainer {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.businessSignupForm__input {
+  width: 100%;
+}
+.businessSignupForm__reportIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(100%);
+}
+
+.businessSignupForm__visibilityIcon {
+  cursor: pointer;
+  color: grey;
+  position: absolute;
+  right: 10%;
+  top: 0;
+  transform: translateY(80%);
+}
+.businessSignupForm__form {
+  position: relative;
+  width: 100%;
+}
+
+.businessSignupForm__span {
+  color: rgba(0, 0, 0, 0.64);
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 24px 0;
+}
+
+.businessSignupForm__form > button {
+  margin-top: 50px;
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 425px) {
+  .businessSignupForm {
+    box-shadow: none;
+    height: 500px;
+  }
+  .businessSignupForm__container {
+    padding: 0 20px;
+  }
+  /* .businessSignupForm__section {
+          font-size: 16px;
+        } */
+}
